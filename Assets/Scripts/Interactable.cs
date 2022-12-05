@@ -7,7 +7,7 @@ public abstract class Interactable : MonoBehaviour
     // Mensaje que se le muestra al jugador para interactuar con el objeto.
     public string promptMessage;
 
-    // Funcion de llamada para el jugador
+    // Llamada a la base que trae las caracteristicas del componente que Interactua (boton, armas, quest, etc...)
     public void BaseInteract()
     {
         Interact();
@@ -16,6 +16,6 @@ public abstract class Interactable : MonoBehaviour
     protected virtual void Interact()
     {
         // No hay que poner codigo aqui
-        // Esta plantilla sera sobreescrita por sus subclases
+        // Esta plantilla sera sobreescrita por sus subclases (contenidos de los objetos Inteactuables)
     }
 }
